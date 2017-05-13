@@ -1,0 +1,43 @@
+/*去掉默认样式*/
+ul,li{
+  margin: 0;
+  padding: 0;
+}
+li{
+  list-style: none;
+}
+/*修理父容器塌陷*/
+.clearfix::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+.tab{
+  width: 600px;
+  margin: 20px auto;
+}
+.tab-header{
+  border: 1px solid #ccc;
+}
+.tab-header>li{
+  float: left;
+  cursor: pointer;
+  width: 198.33px;
+  border-left: 1px solid #ccc;
+  text-align: center;
+}
+.tab-header .active{
+  background: #aaa;
+}
+
+
+.tab-container {
+  border: 1px solid #ccc;
+  height: 200px;
+}
+.tab-container .active {
+  display: block;
+}
+.tab-container>li {
+  display: none;
+}
